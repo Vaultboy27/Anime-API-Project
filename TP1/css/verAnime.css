@@ -1,0 +1,208 @@
+#poster{
+
+    padding-left: 5%;
+    padding-top: 5%;
+    border: black;
+    border-radius: 1%;
+    height: 500px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    max-width:340.031px ;
+}
+
+#container-new{
+
+    background-color: rgba(255, 255, 255, 0.767);
+    border-radius:20px ;
+    box-shadow: 0px 2px 23px #26395338;
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5%;
+    height: auto;
+    
+    
+}
+.list-group-item{
+  padding-top: 5px;
+
+}
+#containeri{
+    display: flex;
+    
+}
+.fixed{
+    width: 100px;
+}
+.flex-item{
+    flex-grow: 1;
+    
+    padding-top: 0px;
+    padding-right: 0px;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.fixed{
+    width: fit-content;
+    padding-right: 2%;
+}
+#anime{
+    
+    width: 100%;
+    height: fit-content;
+
+}
+.h2{
+    padding-top: 5%;
+    margin-top: 0px;
+}
+
+.h3{
+
+    text-align: center ;
+}
+#titulo{
+    margin-top: 0px;
+}
+
+.list-group{
+    font-size: 16px;
+}
+
+  
+#poster:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+#myModal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%;
+    max-height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    margin-bottom: 0px;
+  }
+  
+  /* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    
+  }
+  
+  /* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: co;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  #items-wrapper{
+    
+    height: fit-content;
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+  }
+  
+  #items{
+    display: flex;
+    
+    overflow-x: auto;
+    height: 600px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+
+    
+  
+  }
+  .item{
+
+    flex:none;
+
+    width: 33%;
+    
+    scroll-snap-align: start;
+    pointer-events:none ;
+    padding-left: 5px;
+    
+
+
+  }
+  
+  #img{
+    width:100%;
+    height:100%;
+    object-fit: fill;
+ 
+
+  }
+
+#trailer{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.carousel { 
+  min-height: 600px;
+  }
+
+.carousel-item{
+  min-height: 400px;
+  min-width: 300px;
+}

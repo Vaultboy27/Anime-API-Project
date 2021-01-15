@@ -1,0 +1,83 @@
+
+#column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+
+    
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+#row {
+    margin: 0 -5px;
+
+}
+  
+  /* Clear floats after the columns */
+  #row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+
+
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    #column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    
+    }
+  }
+
+
+#column .card{
+    transition: all .2s ease-in-out;
+    height: 726.5px;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    cursor: pointer;
+}
+
+#column .card:hover { 
+    transform: scale(1.1); 
+}
+
+
+#column .card > .card-image {
+    flex-basis: 25rem;
+    flex-shrink: 0;
+    overflow-y: hidden;
+    background-color: grey;
+    height:415px;
+    width: 100%;
+    
+}
+
+.tabs {
+  
+  display:-webkit-flex;
+  display: -ms-flexbox;
+  display: flex
+  
+}
+
+
+.tabs .tab a{
+  color: black;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active{
+  color: black;
+}
+
+.tabs .indicator {
+  background-color: rgb(85, 85, 85);
+}
+#col_s12{
+    border-radius: 10px;
+}

@@ -1,0 +1,138 @@
+.kemicofa-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    justify-content: stretch;
+    width: 140%;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+
+    
+}
+
+.kemicofa-row > * {
+    flex-basis: 20rem;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+
+.kemicofa-row .card {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    padding-bottom: 2%;
+    margin-left: 2%;
+    scroll-snap-align: start;
+    
+    
+}
+
+.kemicofa-row .card:hover { 
+    transform: scale(1.1); 
+}
+
+
+.kemicofa-row .card > .card-content {
+    flex-grow: 1;
+}
+
+.kemicofa-row .card > .card-image {
+    flex-basis: 25rem;
+    flex-shrink: 0;
+    overflow-y: hidden;
+    background-color: grey;
+}
+
+#search_form{
+    margin-top: 10px;
+    margin-left: 0%;
+    padding-left: 5%;
+    width: 50%;
+
+    
+}
+
+#container-pequeno{
+
+    background-color: rgba(255, 255, 255, 0.692);
+    width: 70%;
+    border-radius:20px ;
+    box-shadow: 0px 2px 23px #26395338;
+    padding-top: 5px;
+
+    
+}
+
+#butoes{
+    margin: auto;
+  width: 40%;
+  margin-left: 7%;
+}
+
+#container-lista{
+
+    padding: top 5% ; 
+    background-color: rgba(255, 255, 255, 0.692);
+    border-radius:20px ;
+    box-shadow: 0px 2px 23px #26395338;
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    
+}
+#search-results{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.p{
+    font-size: medium;
+}
+
+#secao{
+    padding-bottom: 7px;
+}
+
+#chip{
+    background-color: #26a69a;
+    color: white;
+}
+
+#h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 0;
+  }
+#h1s{
+    
+    text-align: center;
+    margin-top: 0;
+  
+}
+#h2{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+#custom-select{
+    flex-grow: 1;
+    padding-top: 3%;
+    margin-right:5% ;
+}
+
+#row{
+    display: flex;
+}
+
+#search{
+    width:300px;
+}
